@@ -2,19 +2,42 @@
 <html>
 <head>
     <!--2. Pesquise a utilização do método setTimeout() 
-        e implemente um relógio que atualize o horário a cada segundo:-->
-    
+        e implemente um relógio que atualize o horário a cada segundo:
+    -->
+
+    <style>
+        button(text-align: center);
+    </style>
     <meta charset="utf-8">
     <title>Exemplo JavaScript</title>
     <script type="text/javascript">
 
         //Horário atual
-        let time = new Date();
-    
+        
+        function MostraHora(){
+            var date = new Date();
+            let horas = date.getHours(); 
+            let minutos = date.getMinutes(); 
+            let segundos = date.getSeconds();
+
+            if (segundos >= 0 && segundos < 10){
+                segundos = "0" + segundos
+            }
+
+            if(minutos >=0 && minutos <10) {
+            minutos = "0"+minutos
+    }
+            if (horas >= 0 && horas < 10){
+                horas = "0" + horas
+            }
+        }
+
     </script>
 </head>
 
 <body>
 </body>
-
+    <button type="button" onClick="MostraHora()">
+    Mostrar Hora
+    </buton>
 </html>
