@@ -5,47 +5,22 @@
         e implemente um relógio que atualize o horário a cada segundo:
     -->
 
-    <!--<style>
-        button{
-            background-color:lightblue;
-            margin-left: 400px;
-            padding:10px;
-            font-weight:bold;
-            font-size:100%;
-            color: Black;
-            margin: 8px 0;
-            border:2px solid black;
-            border-radius:10px;
-        };
+    <style>
+        .relogio{
+            border: 2px solid black;
+            padding: 10px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+        }
             
     </style>
-    -->
+    
     <meta charset="utf-8">
     <title>Exemplo JavaScript</title>
     <script type="text/javascript">
 
-        //Horário atual 
-        
-           /* function mostraHora(){
-            var date = new Date();
-            let horas = date.getHours(); 
-            let minutos = date.getMinutes(); 
-            let segundos = date.getSeconds();
-
-            if (segundos >= 0 && segundos < 10){
-                segundos = "0" + segundos
-            }
-
-            if(minutos >=0 && minutos <10) {
-            minutos = "0"+ minutos
-            }
-            if (horas >= 0 && horas < 10){
-                horas = "0" + horas
-            }
-
-            t = setTimeout('mostraHora()', 1);
-        } */
-        // program to display time every 3 seconds
         function showTime() {
 
         // return new date and time
