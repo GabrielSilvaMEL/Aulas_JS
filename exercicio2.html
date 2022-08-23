@@ -4,21 +4,36 @@
     <!--2. Pesquise a utilização do método setTimeout() 
         e implemente um relógio que atualize o horário a cada segundo:
     -->
-
+    
     <style>
+         *{background-color: #282828;}
         .relogio{
-            border: 2px solid black;
+            border: 2px solid orange;
             padding: 10px;
-            height: 100vh;
+            height: 500px;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .display{
+            background-color: #282828;
+            border: 3px solid orange;
+            border-radius: 30px;
+            width:300px;
+            height: 100px;
+            text-align:center;
+            line-height:100px;
+            color: #528B8B;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
             
     </style>
     
     <meta charset="utf-8">
-    <title>Exemplo JavaScript</title>
+    <title>Relógio em JS</title>
     <script type="text/javascript">
 
         function showTime() {
