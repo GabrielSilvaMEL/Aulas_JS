@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Implemente um script JavaScript que exiba a data atual no formato:
+        
+    Terça-feira, 16 de agosto de 2022
+    http://www.w3schools.com/js/js_date_methods.asp-->
+    
+    <meta charset="utf-8">
+    <title>Exemplo JavaScript</title>
+    <script type="text/javascript">
+    let date = new Date();
+    let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+    document.write(date.toLocaleDateString('pt-BR', options));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
