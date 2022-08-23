@@ -5,19 +5,28 @@
         e implemente um relógio que atualize o horário a cada segundo:
     -->
 
-    <style>
+    <!--<style>
         button{
-            margin-right: 200px;
+            background-color:lightblue;
             margin-left: 400px;
-            padding:10px; font-weight:bold; font-size:100%; color: Black};
+            padding:10px;
+            font-weight:bold;
+            font-size:100%;
+            color: Black;
+            margin: 8px 0;
+            border:2px solid black;
+            border-radius:10px;
+        };
+            
     </style>
+    -->
     <meta charset="utf-8">
     <title>Exemplo JavaScript</title>
     <script type="text/javascript">
 
         //Horário atual
         
-        function MostraHora(){
+           /* function mostraHora(){
             var date = new Date();
             let horas = date.getHours(); 
             let minutos = date.getMinutes(); 
@@ -28,19 +37,40 @@
             }
 
             if(minutos >=0 && minutos <10) {
-            minutos = "0"+minutos
-    }
+            minutos = "0"+ minutos
+            }
             if (horas >= 0 && horas < 10){
                 horas = "0" + horas
             }
-        }
 
+            t = setTimeout('mostraHora()', 1);
+        }*/
+        // program to display time every 3 seconds
+        function showTime() {
+
+        // return new date and time
+        let dateTime= new Date();
+          
+        // returns the current local time
+        let time = dateTime.toLocaleTimeString();
+        
+
+        console.log(time)
+        
+        // display the time after 3 seconds
+        setTimeout(showTime, 1000);
+        var display = document.querySelector('.display');
+        display.textContent = time;
+        console.log(time);
+        }
+        
+        
     </script>
 </head>
 
-<body>
+<body onload="showTime()">
+    <div class="relogio">
+        <div class="display">00:00:00</div>
+    </div>
 </body>
-    <button type="button" onClick="MostraHora()">
-    Mostrar Hora
-    </buton>
 </html>
