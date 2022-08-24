@@ -6,7 +6,7 @@
     -->
     
     <style>
-         *{background-color: #282828;}
+         *{background-color: orange;}
         .relogio{
             border: 2px solid orange;
             padding: 10px;
@@ -28,7 +28,14 @@
             line-height:100px;
             color: #528B8B;
             font-size: 40px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family:fantasy;
+        }
+        .data{
+            color:#282828;
+            font-size: 20px;
+            font-family:fantasy;
+            padding:5px;
+            font-weight: bold;
         }
             
     </style>
@@ -39,29 +46,38 @@
 
         function showTime() {
 
-        // return new date and time
-        let dateTime= new Date();
-          
-        // returns the current local time
-        let time = dateTime.toLocaleTimeString();
-        
+            // return new date and time
+            let dateTime= new Date();
+            
+            // returns the current local time
+            let time = dateTime.toLocaleTimeString();
+            
+            // display the time after 3 seconds
+            setTimeout(showTime, 1000);
+            var display = document.querySelector('.display');
 
-        console.log(time)
-        
-        // display the time after 3 seconds
-        setTimeout(showTime, 1000);
-        var display = document.querySelector('.display');
-        display.textContent = time;
-        console.log(time);
+            display.textContent = time;
+            console.log(time);
+        }
+
+        function showDay(){
+            let dateTime2= new Date();
+            let dia = (dateTime2.toLocaleDateString('pt-BR'));
+
+            //document.write(dia.toLocaleDateString('pt-BR'));
+            var data = document.querySelector('.data');
+            data.textContent = dia;
+            console.log(dia);
         }
         
         
     </script>
 </head>
 
-<body onload="showTime()">
+<body onload="showTime(),showDay()">
     <div class="relogio">
         <div class="display">00:00:00</div>
+        <div class='data'>00/00/0000</div>
     </div>
 </body>
 </html>
