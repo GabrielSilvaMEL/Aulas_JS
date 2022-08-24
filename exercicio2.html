@@ -52,19 +52,22 @@
             // returns the current local time
             let time = dateTime.toLocaleTimeString();
             
-            // display the time after 3 seconds
-            setTimeout(showTime, 1000);
             var display = document.querySelector('.display');
 
+            //set display the content from let time
             display.textContent = time;
+            //"print"
             console.log(time);
+            
+            //set timeout to 1 second
+            setTimeout(showTime, 1000);
         }
 
         function showDay(){
             let dateTime2= new Date();
             let dia = (dateTime2.toLocaleDateString('pt-BR'));
 
-            //document.write(dia.toLocaleDateString('pt-BR'));
+            //display
             var data = document.querySelector('.data');
             data.textContent = dia;
             console.log(dia);
