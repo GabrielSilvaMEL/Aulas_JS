@@ -8,40 +8,58 @@
     
     <meta charset="utf-8">
     <title>Exemplo JavaScript</title>
-    <style>
-        *{
-            background-color: #282828;
-            color: white;
-        }
-        .display-menu{
-            background-color: white;
-        }
-    </style>
 
+    <link rel="stylesheet" href="style1.css">
 
     <script type="text/javascript">
-        function mostradiasemana(){
-                let date = new Date();
-                // let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-                // document.write(date.toLocaleDateString('pt-BR', options));
-                    
-                // returns the current local time
-                //let day= date.getDay();
-                var display = document.querySelector('.display');
-                var day = document.getElementById("diasemana");
-                //set display the content from let time
-                display.textContent = day;
-                //"print" on console
-                console.log(day);
+        // let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+        // document.write(date.toLocaleDateString('pt-BR', options));
+        function ds(){
+            //formata o dia da semana
+            const days = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", 
+            "Sexta-feira", "Sábado"];
+            //cria data
+            let date = new Date();
+            // returns the current local time
+            let day= days[date.getDay()];
+                
+            var display = document.querySelector('.display');               
+            //set display the content from let time
+            display.textContent = day;
+            //"print" on console
+            console.log(day);
+
+            ms();
+            // var disdate = document.querySelector('.disdate');
+            // let dia = date.getDate();
+            // let mes = date.getMonth();
+            // let ano = date.getFullYear();
+            // disdate.textcontent = dia,mes,ano;
+            // console.log(dia,mes, ano);
+            
         }
-    
+        function ms(){
+            let date = new Date();
+            
+            let dia = date.getDate();
+            let mes = date.getMonth();
+            let ano = date.getFullYear();
+            var disdate = document.querySelector('.disdate');
+            disdate.textContent = dia;
+            console.log(dia,mes, ano);
+        }
+        
 
     
     </script>
 </head>
 
-<body onload="mostradiasemana()">
-    <div id="diasemana" class="display">diasemana</div>
+<body onload="ds()">
+    <div class="container">
+        <div class="display">DiaSemana</div>
+        <div class="disdate">a</div>
+    </div>
+    
 </body>
 
 </html>
