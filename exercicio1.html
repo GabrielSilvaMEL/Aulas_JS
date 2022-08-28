@@ -20,20 +20,28 @@
 
 
     <script type="text/javascript">
-    let date = new Date();
-    // let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-    // document.write(date.toLocaleDateString('pt-BR', options));
+        function mostradiasemana(){
+                let date = new Date();
+                // let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+                // document.write(date.toLocaleDateString('pt-BR', options));
+                    
+                // returns the current local time
+                //let day= date.getDay();
+                var display = document.querySelector('.display');
+                var day = document.getElementById("diasemana");
+                //set display the content from let time
+                display.textContent = day;
+                //"print" on console
+                console.log(day);
+        }
+    
 
-    let dateTime= new Date();
-            
-    // returns the current local time
-    let time = dateTime.toLocaleTimeString();
     
     </script>
 </head>
 
-<body>
-    <div class="display-menu"></div>
+<body onload="mostradiasemana()">
+    <div id="diasemana" class="display">diasemana</div>
 </body>
 
 </html>
