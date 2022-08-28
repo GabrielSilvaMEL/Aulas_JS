@@ -8,14 +8,32 @@
     
     <meta charset="utf-8">
     <title>Exemplo JavaScript</title>
+    <style>
+        *{
+            background-color: #282828;
+            color: white;
+        }
+        .display-menu{
+            background-color: white;
+        }
+    </style>
+
+
     <script type="text/javascript">
     let date = new Date();
-    let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
-    document.write(date.toLocaleDateString('pt-BR', options));
+    // let options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};
+    // document.write(date.toLocaleDateString('pt-BR', options));
+
+    let dateTime= new Date();
+            
+    // returns the current local time
+    let time = dateTime.toLocaleTimeString();
+    
     </script>
 </head>
 
 <body>
+    <div class="display-menu"></div>
 </body>
 
 </html>
