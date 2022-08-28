@@ -30,23 +30,20 @@
             console.log(day);
 
             ms();
-            // var disdate = document.querySelector('.disdate');
-            // let dia = date.getDate();
-            // let mes = date.getMonth();
-            // let ano = date.getFullYear();
-            // disdate.textcontent = dia,mes,ano;
-            // console.log(dia,mes, ano);
-            
         }
         function ms(){
             let date = new Date();
-            
-            let dia = date.getDate();
-            let mes = date.getMonth();
-            let ano = date.getFullYear();
+
+            // const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho",
+            //  "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+            let options = {year: 'numeric', month: 'long', day: 'numeric'};
+            let dia = date.toLocaleDateString('pt-BR', options);
+            // let dia = date.getDate();
+            // let mes = months[date.getMonth()];
+            // let ano = date.getFullYear();
             var disdate = document.querySelector('.disdate');
             disdate.textContent = dia;
-            console.log(dia,mes, ano);
+            console.log(dia);  
         }
         
 
