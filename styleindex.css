@@ -23,7 +23,7 @@
     background-color: #282828;
     border: 3px solid orange;
     border-radius: 30px;
-    width:300px;
+    width:250px;
     height: 100px;
     text-align:center;
     line-height:100px;
@@ -43,4 +43,16 @@
 }
 .fococentral-clicavel:hover{
     color:white;
+}
+
+.botaovolta{
+    background-color: #282828;
+    width:100px;
+    height:90px;
+    text-align: center;
+    color: #528B8B;
+    font-size: 30px;
+    font-family:fantasy;
+    border: 3px solid orange;
+    border-radius: 30px;    
 }

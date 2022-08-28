@@ -2,6 +2,7 @@
     background-color: orange;
     color: white;
 }
+
 .display-menu{
     background-color: white;
 }
@@ -33,4 +34,39 @@
     color: #528B8B;
     font-size: 30px;
     font-family:fantasy;    
+}
+.botaovolta{
+    background-color: #282828;
+    width:100px;
+    height:90px;
+    text-align: center;
+    color: #528B8B;
+    font-size: 30px;
+    font-family:fantasy;
+    border: 3px solid orange;
+    border-radius: 30px;    
+}
+.fococentral{
+    background-color: #282828;
+    border: 3px solid orange;
+    border-radius: 30px;
+    width:100px;
+    height: 80px;
+    text-align:center;
+    color: #528B8B;
+    font-size: 30px;
+    font-family:fantasy;    
+}
+.fococentral-clicavel{
+    background-color: #282828;
+    width:300px;
+    height: 100px;
+    text-align:center;
+    color: #528B8B;
+    font-size: 30px;
+    font-family:fantasy;    
+}
+
+.fococentral-clicavel:hover{
+    color:white;
 }
