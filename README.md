@@ -4,10 +4,10 @@ Todos os exercícios poderão ser acessados pelo index e vice-versa
 
 ##
 index.html <br>
-<img src="zfotoindex.png" width='500' align='center'>
+<img src="zfotoindex.png" width='500' margin-left='100px'>
 ##
 exercicio1.html <br>
-<img src="zfotoex1.png" width='500' align='center'>
+<img src="zfotoex1.png" width='500' margin-left='100px'>
 ##
 exercicio2.html <br>
-<img src="zfotoex2.png" width='500' align='center'>
+<img src="zfotoex2.png" width='500' margin-left='100px'>
