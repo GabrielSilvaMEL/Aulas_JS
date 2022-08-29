@@ -8,20 +8,47 @@
     
     <meta charset="utf-8">
     <title>Exercício 3</title>
-    <script type="text/javascript">
-        function fLowerCase(){
-            string.toLowerCase();
-        }
 
-
-    </script>
 </head>
 
-<body onload="">
+<body>
     <div class="">
-        <label for="campoPalavra">Digite uma palavra</label><input type="text" id="campoPalavra" class="campoPalavra">
-
+        <label for="campoPalavra">Digite uma palavra</label>
+        <input type="text" id="campoPalavra" class="campoPalavra">
+        <button id="verifica">Verificar</button>
     </div>
+
+    <script type="text/javascript">
+        document.getElementById("verifica").addEventListener("click",function(){
+            let palavra = document.getElementById("campoPalavra").value;
+            let tamanho = cont = palavra.length;
+            palavra = palavra.toLowerCase();
+
+            let palavra1 = "";
+            let palavra2 = "";
+            for(i=0;i<tamanho;i++){
+                palavra1 = palavra1 + (palavra.charAt(i));   
+            }
+            for(i=tamanho;i>=0;i--){
+                palavra2 = palavra2 + (palavra.charAt(i));
+            }
+
+            if (palavra1 = palavra2){
+                console.log('É um palíndromo.')
+            }
+            else{
+                console.log('Não é um palíndromo.')
+            }
+        });
+
+        
+        function fLeitura(){
+            var nLetras = string.legth();
+            for( i=nLetras.length; nLetras.legth > 0; nLetras.legth=-1){
+                string.lastindexOf()
+            };
+        }
+    </script>
 
 </body>
 </html>
