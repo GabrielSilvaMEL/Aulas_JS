@@ -4,7 +4,7 @@
     <!--2. Pesquise a utilização do método setTimeout() 
         e implemente um relógio que atualize o horário a cada segundo:
     -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style3.css">
     
     <meta charset="utf-8">
     <title>Exercício 3</title>
@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <div class="">
-        <label for="campoPalavra">Digite uma palavra</label>
+    <div class="quacentral">
+        <label for="campoPalavra" class="ctexto">Digite uma palavra</label>
         <input type="text" id="campoPalavra" class="campoPalavra">
-        <button id="verifica">Verificar</button>
+        <button id="verifica" class="botaoverifi">Verificar</button>
     </div>
 
     <script type="text/javascript">
@@ -36,10 +36,10 @@
             }
 
             if (palavra1 == palavra2){
-                console.log('É um palíndromo.')
+                alert('É um palíndromo.')
             }
             else{
-                console.log('Não é um palíndromo.')
+                alert('Não é um palíndromo.')
             }
         });
 

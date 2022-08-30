@@ -2,3 +2,48 @@
     background-color: orange;
     color: white;
 }
+.botaoverifi{
+    padding:10px;
+    width:9%;
+    height:9%;
+    background-color: #282828;
+    border: 0px solid #528B8B;
+    color:white;
+    font-size:20px;
+    border-radius: 30px;
+}
+.botaoverifi:hover{
+    background-color: #282828;
+    border: 2px solid #528B8B;
+}
+.quacentral{
+    border: 2px solid orange;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    gap:4px
+}
+.ctexto{
+    color:#282828;
+    font-size: 20px;
+    font-family:fantasy;
+    padding:5px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.campoPalavra{
+    background-color: #282828;
+    color: #528B8B;
+    border: 0px;
+    width:50%;
+    height: 10%;
+    border-radius:20px;
+}
+.campoPalavra:hover{
+    border:1px solid #528B8B;
+    border-radius:20px;
+}
