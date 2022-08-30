@@ -11,6 +11,8 @@
     color:white;
     font-size:20px;
     border-radius: 30px;
+    font-family:fantasy;
+    font-weight:bold;
 }
 .botaoverifi:hover{
     background-color: #282828;
