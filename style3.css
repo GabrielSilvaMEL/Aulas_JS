@@ -46,18 +46,20 @@
     border:1px solid #528B8B;
     border-radius:20px;
 }
-.fococentral{
-    width:90px;
-    height: 100px;  
+.botaovolta{
     background-color:#282828;
     color:#528B8B;
     font-family:fantasy;
     font-size:20px;
     border: 1px solid orange;
     border-radius: 10px;
-    text-decoration:none; 
-    }
-.fococentral-clicavel{
+    text-decoration:none;
+}
+.botaovolta:hover{
+    border:1px solid white;
+    color:#528B8B;
+}
+.botaovolta-clicavel{
     background-color: #282828;
     width:300px;
     height: 100px;
@@ -65,8 +67,4 @@
     color: #528B8B;
     font-size: 20px;
     font-family:fantasy;    
-}
-
-.fococentral-clicavel:hover{
-    color:white;
 }
