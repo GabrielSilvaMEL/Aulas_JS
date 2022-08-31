@@ -1,46 +1,43 @@
 *{
-    background-color: orange;
+    background-color: #282828;
     color: white;
 }
-.botaoverifi{
-    padding:10px;
-    width:9%;
-    height:9%;
+.botaoverificar{
     background-color: #282828;
-    border: 0px solid #528B8B;
     color:white;
+    border: 1px solid orange;
+    border-radius:10px;
     font-size:20px;
-    border-radius: 30px;
     font-family:fantasy;
-    font-weight:bold;
+    letter-spacing: 0.3px;
+    width:10%;
+    height:50px;
+    gap:10px;
 }
-.botaoverifi:hover{
-    background-color: #282828;
-    border: 2px solid #528B8B;
+.botaoverificar:hover{
+    border: 1px solid white;
 }
 .quacentral{
-    border: 2px solid orange;
     padding: 10px;
     height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
+
     gap:4px
 }
 .ctexto{
-    color:#282828;
+    color: orange;
     font-size: 20px;
     font-family:fantasy;
     padding:5px;
-    font-weight: bold;
     font-size: 50px;
 }
 .campoPalavra{
     background-color: #282828;
     color: #528B8B;
-    border: 0px;
+    border:1px solid orange;
     width:50%;
     height: 10%;
     border-radius:20px;
@@ -48,4 +45,26 @@
 .campoPalavra:hover{
     border:1px solid #528B8B;
     border-radius:20px;
+}
+.botaovolta{
+    background-color:#282828;
+    color:#528B8B;
+    font-family:fantasy;
+    font-size:20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-decoration:none;
+}
+.botaovolta:hover{
+    border:1px solid white;
+    color:#528B8B;
+}
+.botaovolta-clicavel{
+    background-color: #282828;
+    width:300px;
+    height: 100px;
+    text-align:center;
+    color: #528B8B;
+    font-size: 20px;
+    font-family:fantasy;    
 }

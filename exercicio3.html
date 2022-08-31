@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style3.css">
     
     <meta charset="utf-8">
-    <title>Exercício 3</title>
+    <title>Palíndromo</title>
 
 </head>
 
@@ -15,8 +15,10 @@
     <div class="quacentral">
         <label for="campoPalavra" class="ctexto">Digite uma palavra</label>
         <input type="text" id="campoPalavra" class="campoPalavra">
-        <button id="verifica" class="botaoverifi">Verificar</button>
+        <button id="verifica" class="botaoverificar">Verificar</button>
+        
     </div>
+    <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
 
     <script type="text/javascript">
         document.getElementById("verifica").addEventListener("click",function(){
@@ -42,8 +44,6 @@
                 alert('Não é um palíndromo.')
             }
         });
-
     </script>
-
 </body>
 </html>
