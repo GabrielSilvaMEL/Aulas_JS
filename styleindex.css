@@ -1,16 +1,15 @@
 *{
-    background-color: orange;
+    background-color: #282828;
 }
 
 .displaycentral{
-    border: 2px solid orange;
     padding: 10px;
     height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
+    gap:10px;
 }
 .display{
     color:#282828;
@@ -21,15 +20,13 @@
 }
 .fococentral{
     background-color: #282828;
-    border: 3px solid orange;
-    border-radius: 30px;
     width:250px;
-    height: 100px;
-    text-align:center;
-    line-height:100px;
-    color: #528B8B;
-    font-size: 30px;
-    font-family:fantasy;    
+    height: 90px;
+    font-family:fantasy;
+    font-size:20px;
+    border: 1px solid orange;
+    border-radius: 40px;
+    text-decoration:none;  
 }
 .fococentral-clicavel{
     background-color: #282828;
@@ -43,16 +40,4 @@
 }
 .fococentral-clicavel:hover{
     color:white;
-}
-
-.botaovolta{
-    background-color: #282828;
-    width:100px;
-    height:90px;
-    text-align: center;
-    color: #528B8B;
-    font-size: 30px;
-    font-family:fantasy;
-    border: 3px solid orange;
-    border-radius: 30px;    
 }

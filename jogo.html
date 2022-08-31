@@ -19,6 +19,32 @@
         color: white;
         padding: 3px;
       }
+      .fococentral{
+    width:90px;
+    height: 80px;  
+    background-color:#282828;
+    color:#528B8B;
+    font-family:fantasy;
+    font-size:20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    text-decoration:none;    
+    }
+
+    .fococentral-clicavel{
+        background-color: #282828;
+        width:300px;
+        height: 100px;
+        text-align:center;
+        color: #528B8B;
+        font-size: 20px;
+        font-family:fantasy;  
+        text-align:center;  
+    }
+
+    .fococentral-clicavel:hover{
+        color:white;
+    }
     </style>
   </head>
 
@@ -37,23 +63,23 @@
   <p class="ultimoResultado"></p>
   <p class="baixoOuAlto"></p>
 </div>
-
+<button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
 </body>
 
 <script>
   
   var numeroAleatorio= Math.floor(Math.random() * 100) + 1;
 
-var palpites = document.querySelector('.palpites');
-var ultimoResultado = document.querySelector('.ultimoResultado');
-var baixoOuAlto = document.querySelector('.baixoOuAlto');
+  var palpites = document.querySelector('.palpites');
+  var ultimoResultado = document.querySelector('.ultimoResultado');
+  var baixoOuAlto = document.querySelector('.baixoOuAlto');
 
-var envioPalpite = document.querySelector('.envioPalpite');
-var campoPalpite = document.querySelector('.campoPalpite');
+  var envioPalpite = document.querySelector('.envioPalpite');
+  var campoPalpite = document.querySelector('.campoPalpite');
 
-var contagemPalpites = 1;
-var botaoReinicio;
-campoPalpite.focus();
+  var contagemPalpites = 1;
+  var botaoReinicio;
+  campoPalpite.focus();
 
 
   function conferirPalpite() {
