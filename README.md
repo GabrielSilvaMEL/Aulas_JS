@@ -1,9 +1,8 @@
 Exercícios feitos com utilização do java script, css e HTML
 ##
 Todos os exercícios poderão ser acessados pelo index e vice-versa
-
 ##
-index.html <br>
+index <br>
 <img src="zfotoindex.png" width='50%'> <img src="zindex2.png" width='50%'>
 ##
 Data <br>
@@ -11,3 +10,9 @@ Data <br>
 ##
 Relógio <br>
 <img src="zfotoex2.png" width='50%'> <img src="zfotorelogio.png" width='50%'>
+##
+Palíndromo <br>
+<img src="zpalindromo.png" width='50%'>
+##
+Lista <br>
+<img src="zlista.png" width='50%'>
