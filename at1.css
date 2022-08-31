@@ -1,0 +1,32 @@
+*{
+    background-color:#282828;
+    color:white;
+}
+.botaoverificar{
+    background-color: #282828;
+    color:white;
+    border: 1px solid orange;
+    border-radius:10px;
+    font:fantasy;
+    font-weight: bold;
+    width:10%;
+    height:60px;
+    gap:10px;
+}
+.pergunta{
+    border: 2px solid orange;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    gap:4px
+}
+.digitavel{
+    width: 80%;
+    height: 9%;
+    border: 3px solid orange;
+    border-radius: 40px;
+}
