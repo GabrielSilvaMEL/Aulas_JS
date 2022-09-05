@@ -1,0 +1,7 @@
+c# -> function e class
+javascript -> function e function
+objeto literal recebe valores sem o uso do 'new'
+//estudar teoria de poo
+
+métodos acessores(te dão acesso a propriedades) -> get(busca um valor para  a variavel) e set(manda um valor para a variavel)
+usar sets e gets na chamada, são boa praticas.

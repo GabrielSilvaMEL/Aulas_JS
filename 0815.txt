@@ -1,0 +1,10 @@
+html não é linguagem, é interpretado..
+
+https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+declarar variáveis preferencialmente com "let" ao invés de 'var'.
+
+
+comandos if: switchcase < if
+
+while < for

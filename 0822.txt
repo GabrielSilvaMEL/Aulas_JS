@@ -1,0 +1,9 @@
+tudo para o javascript é objeto. > window é o topo.
+método: ação do objeto. ex: date
+evento: ação do usuário no objeto. ex: clicar
+método get envia dados pela url
+"serverside" pesquisar
+
+
+darktooth theme for vs code
+
