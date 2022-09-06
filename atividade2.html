@@ -42,7 +42,20 @@
         cor:"",
         km:0,
         valor_fipe:0,
+
+        
     }
+
+    function Carro(){
+        let marca, modelo, ano, cor, km, valor_fipe;
+        this.setMarca = function(vMarca){
+            this.marca = vMarca;
+        }
+        this.getMarca = function(){
+            return this.marca;
+        }
+    };
+
         document.getElementById("add").addEventListener("click",function(){
             
             carro.marca = document.getElementById('marca').value;
