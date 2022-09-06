@@ -112,23 +112,16 @@
 
         document.getElementById("add").addEventListener("click",function(){
             
-            // carro.marca = document.getElementById('marca').value;
-            // carro.modelo = document.getElementById('modelo').value;
-            // carro.ano = document.getElementById('ano').value;
-            // carro.cor = document.getElementById('cor').value;
-            // carro.km = document.getElementById('km').value;
-            // carro.valor_fipe = document.getElementById('fipe').value;
+            var carro = new Carro();
             
             
-            
-            
-            valorMercado();
-            anosUtilizacao();
+            carro.valorMercado();
+            carro.anosUtilizacao();
             // var display = document.querySelector('.display');            
             // display.textContent = valorMercado();
 
-            document.write("Valor do mercado: " + valorMercado()); 
-            document.write("Anos de utilização do carro: " + anosUtilizacao());
+            document.write("Valor do mercado: " + carro.valorMercado()); 
+            document.write("Anos de utilização do carro: " + carro.anosUtilizacao());
         });
     </script>
     
