@@ -77,17 +77,18 @@
             
             valorMercado();
             anosUtilizacao();
-            console.log(valorMercado());
-            console.log(anosUtilizacao());
-            console.log(carro);
+            var display = document.querySelector('.display');            
+            display.textContent = valorMercado();
 
             document.write("Valor do mercado: " + valorMercado()); 
-            document.write("");
-            document.write(anosUtilizacao());
-            document.write("");
-            document.write(carro);
+            
+
+            document.write("Anos de utilização do carro: " + anosUtilizacao());
+            
         });
     </script>
-    
+    <div></div>
+        <div class="display">v</div>
+        <div class='data'></div>
     
 </body>
