@@ -3,30 +3,34 @@
 <head>
     <meta charset="utf-8">
     <title>Formulario</title>
-    <link rel="stylesheet" href="at1.css">
+    <link rel="stylesheet" href="at2.css">
 </head>
 <body>
     <div class="pergunta">
     
     <label for="marca" class="label">Digite a marca:</label>
     <input type="text" id="marca" class="digitavel">
+
     <label for="modelo" class="label">Digite o modelo:</label>
     <input type="text" id="modelo" class="digitavel">
+
     <label for="ano" class="label">Digite o ano:</label>
-    <input type="text" id="ano" class="digitavel">
+    <input type="number" id="ano" class="digitavel">
+
+    <label for="cor" class="label">Digite a cor:</label>
+    <input type="text" id="cor" class="digitavel">
+
     <label for="km" class="label">Digite a kilometragem:</label>
     <input type="number" id="km" class="digitavel">
-    <label for="marca" class="label">Digite o valor na tabela fipe:</label>
-    <input type="text" id="marca" class="digitavel">
+
+    <label for="fipe" class="label">Digite o valor na tabela fipe:</label>
+    <input type="number" id="fipe" class="digitavel">
 
     <button id="add" class="botaoverificar">Verificar</button>
 
     <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
 
     </div>
-    <ul id="minhaLista" class="tabela">
-
-    </ul>
             
             
      
@@ -36,14 +40,51 @@
         modelo:"",
         ano:0,
         cor:"",
-        kilometragem:"",
-        valor_fipe:"",
+        km:0,
+        valor_fipe:0,
     }
         document.getElementById("add").addEventListener("click",function(){
-    
             
+            carro.marca = document.getElementById('marca').value;
+            carro.modelo = document.getElementById('modelo').value;
+            carro.ano = document.getElementById('ano').value;
+            carro.cor = document.getElementById('cor').value;
+            carro.km = document.getElementById('km').value;
+            carro.valor_fipe = document.getElementById('fipe').value;
             
+            function anosUtilizacao(){
+                var data = new Date();
+                var dataAtual = data.getFullYear();
+                var dataUsada = dataAtual - carro.ano;
+                return dataUsada;
+            }
+            function valorMercado(){
+                var valorMercado = 0;
+                var dataUssada = anosUtilizacao();
+                var pAno = carro.km / dataUssada ;
+                if (pAno<=30000){
+                    valorMercado = carro.valor_fipe * 1.10;
+                }
+                else if(30000 < pAno & pAno < 50000){
+                    valorMercado = carro.valor_fipe;
+                }
+                else if(pAno > 50000){
+                    valorMercado = carro.valor_fipe * 0.9;
+                    
+                }
+                return valorMercado;
+            }
+            
+            valorMercado();
+            anosUtilizacao();
+            console.log(valorMercado());
+            console.log(anosUtilizacao());
+            console.log(carro);
 
+            document.write("Valor do mercado: " + valorMercado()); 
+            document
+            document.write(anosUtilizacao());
+            document.write(carro);
         });
     </script>
     
