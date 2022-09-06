@@ -86,24 +86,13 @@
         this.getFipe= function(){
             return this.fipe;
         }
-    };
-
-        document.getElementById("add").addEventListener("click",function(){
-            
-            // carro.marca = document.getElementById('marca').value;
-            // carro.modelo = document.getElementById('modelo').value;
-            // carro.ano = document.getElementById('ano').value;
-            // carro.cor = document.getElementById('cor').value;
-            // carro.km = document.getElementById('km').value;
-            // carro.valor_fipe = document.getElementById('fipe').value;
-            
-            function anosUtilizacao(){
-                var data = new Date();
-                var dataAtual = data.getFullYear();
-                var dataUsada = dataAtual - carro.ano;
-                return dataUsada;
-            }
-            function valorMercado(){
+        function anosUtilizacao(){
+            var data = new Date();
+            var dataAtual = data.getFullYear();
+            var dataUsada = dataAtual - carro.ano;
+            return dataUsada;
+        }
+        function valorMercado(){
                 var valorMercado = 0;
                 var dataUssada = anosUtilizacao();
                 var pAno = carro.km / dataUssada ;
@@ -118,7 +107,20 @@
                     
                 }
                 return valorMercado;
-            }
+        }
+    };
+
+        document.getElementById("add").addEventListener("click",function(){
+            
+            // carro.marca = document.getElementById('marca').value;
+            // carro.modelo = document.getElementById('modelo').value;
+            // carro.ano = document.getElementById('ano').value;
+            // carro.cor = document.getElementById('cor').value;
+            // carro.km = document.getElementById('km').value;
+            // carro.valor_fipe = document.getElementById('fipe').value;
+            
+            
+            
             
             valorMercado();
             anosUtilizacao();
