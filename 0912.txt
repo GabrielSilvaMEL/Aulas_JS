@@ -1,0 +1,13 @@
+O REACT NÃO É UMA NOVA LINGUAGEM, é uma bilbioteca javascript.
+"react native" é mobile
+"react" é web
+
+react é bom pra componentizar ja existentes.
+
+virtual dom X dom
+
+virtual dom renderiza somente o necessário, economizando recursos de hardware atrave´s de IDs associados ao react. Evitando percorrer a árvore de hierarquia.
+
+js X jsx
+
+JSX -> insere o HTML no JS de forma mais simples.
