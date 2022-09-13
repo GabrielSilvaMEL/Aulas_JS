@@ -14,17 +14,14 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+        let texto = 'Venha estudar na Fatec'; 
+        // let tamanho = texto.lenght;
         function letreiro(){
-            let txt = 'Venha estudar na Fatec';
-            let i = 0;
-            let r = txt.length();
-            if (i<=r){
-                 document.write(txt.charAt(i));
-                i++;
-            }
-        const element = <h1>{letreiro()}</h1>;
-        ReactDOM.render(element,document.getElementById('root')); 
+            return i++;
         }
+        
+        const element = <h1>{texto}</h1>;
+        ReactDOM.render(element,document.getElementById('root'));
         setInterval(letreiro, 1000);
     </script>
 </body>
