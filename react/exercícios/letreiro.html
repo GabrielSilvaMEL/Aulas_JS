@@ -14,16 +14,18 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        function tick(){
-            const element = (
-                <div>
-                    <h1>Hello World!</h1>
-                    <h2>It is {new Date().toLocaleTimeString()}.</h2>
-                </div>
-            );
-            ReactDOM.render(element,document.getElementById('root'));
+        function letreiro(){
+            let txt = 'Venha estudar na Fatec';
+            let i = 0;
+            let r = txt.length();
+            if (i<=r){
+                 document.write(txt.charAt(i));
+                i++;
+            }
+        const element = <h1>{letreiro()}</h1>;
+        ReactDOM.render(element,document.getElementById('root')); 
         }
-        setInterval(tick, 1000);
+        setInterval(letreiro, 1000);
     </script>
 </body>
 </html>
