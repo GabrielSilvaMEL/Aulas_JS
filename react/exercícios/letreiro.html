@@ -12,17 +12,24 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="voce" style="font-family: Arial;"></div>
+    <div id="root" style="font-family: Arial;"></div>
     <script type="text/babel">
-        let texto = 'Venha estudar na Fatec'; 
-        // let tamanho = texto.lenght;
+        let texto = 'Venha estudar na Fatec';
+        let textopassado = ''; 
+        let i=0;
         function letreiro(){
-            return i++;
+            const element = (<h1>{textopassado= textopassado + texto[i]}</h1>);  
+            i++;
+            if (i <= texto.length){
+               ReactDOM.render(element,document.getElementById('root'));  
+            }
+            
         }
-        
-        const element = <h1>{texto}</h1>;
-        ReactDOM.render(element,document.getElementById('root'));
-        setInterval(letreiro, 1000);
+        const voce = (<h1>Ei, você</h1>); 
+        ReactDOM.render(voce,document.getElementById('voce'));  
+
+        setInterval(letreiro, 100);
     </script>
 </body>
 </html>
