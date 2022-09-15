@@ -10,9 +10,10 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="letreiro.css">
 </head>
 <body>
-    <div id="voce" style="font-family: Arial;"></div>
+    <!-- <div id="voce" style="font-family: Arial;"></div> -->
     <div id="root" style="font-family: Arial;"></div>
     <script type="text/babel">
         let texto = 'Venha estudar na Fatec';
@@ -25,10 +26,10 @@
                ReactDOM.render(element,document.getElementById('root'));  
             }
         }
-        const voce = (<h1>Ei, você</h1>); 
-        ReactDOM.render(voce,document.getElementById('voce'));  
+        // const voce = (<h1>Ei, você</h1>); 
+        // ReactDOM.render(voce,document.getElementById('voce'));  
 
-        setInterval(letreiro, 100);
+        setInterval(letreiro, 200);
     </script>
 </body>
 </html>
