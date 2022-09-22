@@ -6,18 +6,16 @@
     <link rel="stylesheet" href="at1.css">
 </head>
 <body>
-    <div class="pergunta">
-    <label for="ouve" class="label">Digite um número</label>
-    <input type="text" id="ouve" class="digitavel">
-    <button id="add" class="botaoverificar">Verificar</button>
-    <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
-    </div>
-    <ul id="minhaLista" class="tabela">
 
-    </ul>
-            
-            
-        
+    <div class="pergunta">
+        <label for="ouve" class="label">Digite um número</label>
+        <input type="text" id="ouve" class="digitavel">
+        <button id="add" class="botaoverificar">Verificar</button>
+        <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
+    </div>
+
+    <ul id="minhaLista" class="tabela"> </ul> 
+    
     <script type="text/javascript">
         var array = new Array();
         document.getElementById("add").addEventListener("click",function(){
@@ -28,6 +26,5 @@
            document.getElementById("minhaLista").appendChild(aux1);
         });
     </script>
-    
-    
+       
 </body>
