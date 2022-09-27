@@ -18,13 +18,28 @@
     
     <script type="text/javascript">
         var array = new Array();
+        let lista = document.getElementById("minhaLista");
         document.getElementById("add").addEventListener("click",function(){
-           array.push(document.getElementById("ouve").value);
-           let aux1 = document.createElement("li");
-           let aux2 = document.createTextNode(array[array.length-1]);
-           aux1.appendChild(aux2);
-           document.getElementById("minhaLista").appendChild(aux1);
-           ul.sort();
+            array.push(document.getElementById("ouve").value);
+            array.sort();
+
+           console.log(array);
+
+           for(i=0;i<array.length;i++){
+                if(typeof lista.children[i] != "undefined"){
+                    lista.removeChild(lista.children[i]);
+                }
+                
+           }
+            
+            for(i=0;i<array.length;i++){
+                let aux1 = document.createElement("li");
+                let aux2 = document.createTextNode(array[i]);
+                aux1.appendChild(aux2);
+                document.getElementById("minhaLista").appendChild(aux1);
+
+            }
+
         });
     </script>
        
