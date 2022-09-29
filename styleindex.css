@@ -66,7 +66,21 @@ a.button {
 }
 a.button:hover{
     color: #66999D;
-    border:1px solid #FE8019;
+
+
+}
+a.button:after{
+    content:"";
+    position:sticky;
+    background-color:#FE8019;
+    height:3px;
+    width:0;
+    left:0;
+
+    transition:0.3s;
+}
+a.button:hover:after{
+    width:100%
 }
 /* button{
     color:#FE8019;
