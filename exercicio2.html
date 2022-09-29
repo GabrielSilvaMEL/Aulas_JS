@@ -4,7 +4,7 @@
     <!--2. Pesquise a utilização do método setTimeout() 
         e implemente um relógio que atualize o horário a cada segundo:
     -->
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styleindex.css">
     
     <meta charset="utf-8">
     <title>Relógio em JS</title>
@@ -38,7 +38,7 @@
             data.textContent = dia;
             console.log(dia);
         }
-        function ds(){
+        function mainh1(){
                 const days = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", 
                 "Sexta-feira", "Sábado"];
 
@@ -46,9 +46,9 @@
                 // returns the current local time
                 let day= days[date.getDay()];
                 
-                var ds = document.querySelector('.ds');               
+                var mainh1 = document.querySelector('.mainh1');               
                 //set display the content from let time
-                ds.textContent = day;
+                mainh1.textContent = day;
                 //"print" on console
                 console.log(day);
         }
@@ -57,14 +57,18 @@
     </script>
 </head>
 
-<body onload="showTime(),showDay(),ds()">
-    <div class="relogio">
-        <div class="ds">dia</div>
-        <div class="display">00:00:00</div>
-        <div class='data'>00/00/0000</div>
-        
+<body onload="showTime(),showDay(),mainh1()">
+    <div class="meio">
+        <div class="coluna">
+            <div class="esquerda">
+                <h1 class="mainh1">dia</h1>
+            </div>
+            <div class="direita">
+                <div class="display">00:00:00</div>
+                <div class='data' style="font-size: 20px;font-family:fantasy;">00/00/0000</div>
+            </div>
+        </div>
     </div>
-
-    <button class="fococentral"><a class="fococentral-clicavel" href="index.html">Voltar</a></button>
+    <a href="index.html" class="botaovoltar">Voltar</a>
 </body>
 </html>

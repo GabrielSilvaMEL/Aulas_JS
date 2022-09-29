@@ -8,10 +8,24 @@ body{
     );
     font-family: roboto, arial, helvetica, sans-serif;
     color:white;
+    font-size: 20px;
 }
-.main{
+.mainh1{
     font-size:80px;
-
+    color:#66999D;
+    
+}
+header{
+    /* posição fixa */
+    position:fixed;
+    /* Display flex */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    top:3%;
+    left:3%;
 }
 .meio{
 
@@ -24,7 +38,6 @@ body{
     margin-top:10%;
 }
 .coluna{
-
     width:100%;
     height:50%;
     display: flex;
@@ -46,6 +59,7 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     gap:20px;
     margin-right: 10%;
     width:30%;
@@ -55,7 +69,6 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     color:#FE8019;
     font-size:20px;
     background:rgba(0, 0, 0, 0);
@@ -63,24 +76,74 @@ a.button {
     width:100%;
     text-decoration: none;
     text-align:center;
+    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
 }
 a.button:hover{
     color: #66999D;
 
-
 }
-a.button:after{
+.button:after,.botaovoltar:after{
+    border:1 px solid #FE8019;
     content:"";
-    position:sticky;
+    position:absolute;
     background-color:#FE8019;
     height:3px;
     width:0;
     left:0;
-
+    bottom:0;
     transition:0.3s;
 }
-a.button:hover:after{
-    width:100%
+
+.button:hover::after,.botaovoltar:hover::after{
+    width:100%;
+}
+
+a.botaovoltar{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color:#FE8019;
+    font-size:25px;
+    background:rgba(0, 0, 0, 0);
+    border:0;
+    text-decoration: none;
+    text-align:center;
+    position:fixed;
+    bottom:3%;
+    left:3%;
+}
+
+.display{
+    font-size: 50px;
+    font-family:fantasy;
+    color:#FE8019
+}
+.digitavel{
+    width:100%;
+    font-size:25px;
+    background:#14161b;
+    border:1px solid #FE8019;
+    border-radius: 10px;
+    color:white;
+    text-align:center;
+    text-shadow: 0 0 3px #FE8019;
+}
+.digitavel:hover{
+  border:1px solid white
+}
+/* Botão Verificar */
+.btverificar{
+    width:50%;
+    font-size:25px;
+    background:#14161b;
+    border:1px solid #FE8019;
+    color:#66999D;
+    border-radius:10px;
+    
+}
+.btverificar:hover{
+    border:1px solid white;
+
 }
 /* button{
     color:#FE8019;
