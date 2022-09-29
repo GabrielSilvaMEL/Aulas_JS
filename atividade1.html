@@ -3,19 +3,31 @@
 <head>
     <meta charset="utf-8">
     <title>Lista</title>
-    <link rel="stylesheet" href="at1.css">
+    <link rel="stylesheet" href="styleindex.css">
 </head>
 <body>
 
-    <div class="pergunta">
-        <label for="ouve" class="label">Digite um número</label>
-        <input type="text" id="ouve" class="digitavel">
-        <button id="add" class="botaoverificar">Verificar</button>
-        <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
-    </div>
+    <div class="meio">
+        <div class="coluna">
+            <div class="esquerda">
 
-    <ul id="minhaLista" class="tabela"> </ul> 
-    
+                <h1 for="ouve" class="">Digite algo</h1>
+                
+                <input type="text" id="ouve" class="digitavel">
+                <button id="add" class="btverificar">Verificar</button>
+
+            </div>
+
+            <div class="direita">
+                
+                <ul id="minhaLista" class="tabela"> </ul> 
+
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <a href="index.html" class="botaovoltar">Voltar</a>
+
     <script type="text/javascript">
         var array = new Array();
         let lista = document.getElementById("minhaLista");
@@ -25,11 +37,10 @@
 
            console.log(array);
 
-           for(i=0;i<array.length;i++){
+           for(i=0;i<=array.length;i++){
                 if(typeof lista.children[i] != "undefined"){
                     lista.removeChild(lista.children[i]);
                 }
-                
            }
             
             for(i=0;i<array.length;i++){

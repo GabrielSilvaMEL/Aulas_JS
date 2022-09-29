@@ -144,6 +144,8 @@ a.botaovoltar{
 .btverificar:hover{
     border:1px solid white;
 }
+
+/* Style do li da lista de array */
 /* button{
     color:#FE8019;
     font-size:15px;
