@@ -1,33 +1,82 @@
-*{
-    background-color: #282828;
+body{
+    background: linear-gradient(
+        to right,
+        #14161b 0%,
+        #14161b 50%,
+        #282828 50%,
+        #282828 100%
+    );
 }
 
-.displaycentral{
+.meio{
+    border: 1px solid #FE8019;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width:100%;
+    margin-top:10%;
+}
+.coluna{
+    border: 1px solid #FE8019;
+    width:100%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.direita{
+    border: 1px solid #FE8019;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    margin-right: 10%;
+    width:30%;
+    padding:10px;
+}
+button{
+    color:#FE8019;
+    font-size:15px;
+    background:rgba(0, 0, 0, 0);
+    border:0;
+    width:100%;
+}
+button:hover{
+    border:1px solid white;
+}
+
+
+/* #A89984 */
+/* .displaycentral{
     margin-top: 10%;
-    height:500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap:10px;
 }
-.fococentral{
+.divcentral{
     background-color: #282828;
     width:250px;
     height: 80px;
     font-family:fantasy;
     font-size:20px;
-    border: 1px solid orange;
+    border: 1px solid #FE8019;
     border-radius: 40px;
     text-decoration:none;
 }
-.fococentral-clicavel{
+.divcentral-clicavel{
     background-color: #282828;
-    color: #528B8B;
+    color: #66999D;
     font-size: 30px;
     font-family:fantasy; 
     text-align: center;  
 }
-.fococentral-clicavel:hover{
-    color:white;
-}
+.divcentral-clicavel:hover{
+    color:#2B3C44;
+} */
