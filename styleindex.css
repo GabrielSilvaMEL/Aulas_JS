@@ -6,9 +6,10 @@ body{
         #282828 50%,
         #282828 100%
     );
-    font-family: roboto, arial, helvetica, sans-serif;
+   
     color:white;
     font-size: 20px;
+    font-family: bebas neue;
 }
 .mainh1{
     font-size:80px;
@@ -115,7 +116,7 @@ a.botaovoltar{
 
 .display{
     font-size: 50px;
-    font-family:fantasy;
+    font-family:bebas neue;
     color:#FE8019
 }
 .digitavel{
