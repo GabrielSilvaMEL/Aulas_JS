@@ -1,7 +1,22 @@
 Exercícios feitos com utilização do java script, css e HTML
 ##
 Todos os exercícios poderão ser acessados pelo index e vice-versa
-##Preview do Index <br>
-<img src='indexnova.png'><br>
-<img src='relogio.png'><br>
-<img src='relogionovo.png'><br>
+##
+index <br>
+<img width="25%" height="25%" src="zfotos/zfotoindex.png"> <img width="25%" height="25%" src="zfotos/zindex2.png">
+##
+Data <br>
+<img width="25%" height="25%" src="zfotos/zfotoex1.png" ><img width="25%" height="25%" src="zfotos/zfotodata.png">
+##
+Relógio <br>
+<img width="50%%" height="50%" src="zfotos/zfotoex2.png"> <img width="50%" height="50%" src="zfotos/zfotorelogio.png">
+##
+Palíndromo <br>
+<img width="25%" height="25%" src="zpalindromo.png"> <img width="25%" height="25%" src="preview.png">
+##
+Lista <br>
+<img width="25%" height="25%" src="zfotos/zlista.png"> 
+
+<img src='zfotos/indexnova.png'><br>
+<img src='zfotos/relogio.png'><br>
+<img src='zfotos/relogionovo.png'><br>
