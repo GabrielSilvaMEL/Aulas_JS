@@ -11,10 +11,8 @@ body{
     font-size: 20px;
     font-family: bebas neue;
 }
-.mainh1{
-    font-size:80px;
-    color:#66999D;
-    
+li{
+    color:#FE8019;
 }
 header{
     /* posição fixa */
@@ -28,15 +26,19 @@ header{
     top:3%;
     left:3%;
 }
-.meio{
+.mainh1{
+    font-size:80px;
+    color:#66999D;
+}
 
+.meio{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height:50%;
+    /* height:50%; */
     width:100%;
-    margin-top:10%;
+    margin-top:13%; /* previamente era 10% */
 }
 .coluna{
     width:100%;
@@ -61,7 +63,7 @@ header{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap:20px;
+    gap:10px;
     margin-right: 10%;
     width:30%;
     padding:10px;
@@ -123,7 +125,7 @@ a.botaovoltar{
     width:100%;
     font-size:25px;
     background:#14161b;
-    border:1px solid #FE8019;
+    border:1px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     color:white;
     text-align:center;
@@ -136,8 +138,8 @@ a.botaovoltar{
 .btverificar{
     width:50%;
     font-size:25px;
-    background:#14161b;
-    border:1px solid #FE8019;
+    background:#282828;
+    border:0;
     color:#66999D;
     border-radius:10px;
     
@@ -145,8 +147,48 @@ a.botaovoltar{
 .btverificar:hover{
     border:1px solid white;
 }
+.teste{
+    position: fixed;
+    left:0;
+    bottom:20%;
+    height:15%;
+    width:19%;
+    background-color:#282828;
+}
+a.seta{
+    color:white;
+    position:fixed;
+    font-size: 40px;
+    right:5%;
+    top:50%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
+    text-decoration: none;
+}
+a.setavolta{
+    color:white;
+    position:fixed;
+    font-size: 40px;
+    left:5%;
+    top:50%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
+    text-decoration: none;
+}
 
-/* Style do li da lista de array */
+.fa-github{
+    font-size:30px;
+    text-decoration: none;
+    color:#66999D;
+    
+}
+.fa-github:hover{
+    color:white;
+}
 /* button{
     color:#FE8019;
     font-size:15px;
@@ -167,9 +209,6 @@ a{
 a:hover{
     color: #66999D;
 } */
-
-
-
 
 
 /* #A89984 */
