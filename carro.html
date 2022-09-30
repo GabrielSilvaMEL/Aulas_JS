@@ -8,17 +8,11 @@
         .digitavel{
             background-color:#282828;
         }
+        
     </style>
 </head>
 <body>
-    <div class="pergunta">
-        
-
-        
-
-        
-    </div>
-
+    
     <div class="meio">
         <div class="coluna">
             <div class="esquerda">
@@ -30,119 +24,80 @@
 
                 <label for="ano" class="label">Digite o ano:</label>
                 <input type="text" id="ano" class="digitavel"> <br>
-
-                <label for="cor" class="label">Digite a cor:</label>
-                <input type="text" id="cor" class="digitavel"> <br>
-
-                <label for="km" class="label">Digite a kilometragem:</label>
-                <input type="text" id="km" class="digitavel"> <br>
-
-                <label for="fipe" class="label">Digite o valor na tabela fipe:</label>
-                <input type="text" id="fipe" class="digitavel"> <br>
-
-                <button id="add" class="btverificar">Verificar</button>
             </div>
             <div class="direita">
+                <label for="cor" class="label">Digite a cor:</label>
+                <input type="text" id="cor" class="digitavel" style="background-color:#14161b"> <br>
 
+                <label for="km" class="label">Digite a kilometragem:</label>
+                <input type="text" id="km" class="digitavel" style="background-color:#14161b"> <br>
+
+                <label for="fipe" class="label">Digite o valor na tabela fipe:</label>
+                <input type="text" id="fipe" class="digitavel" style="background-color:#14161b"> <br>
+
+                
             </div>
         </div>
     </div>
-
-
-
-
-
-
-    <a class="seta" href="">ᐳ</a>
-    <a class="setavolta" href="lista.html">ᐸ</a>
-
+        <button id="add" class="btverificar2">Verificar</button>
+        <a class="seta" href="">ᐳ</a>
+        <a class="setavolta" href="lista.html">ᐸ</a>
     <script type="text/javascript">
-        var carro = {
-        marca:"",
-        modelo:"",
-        ano:0,
-        cor:"",
-        km:0,
-        valor_fipe:0,
-    }
-
-    function Carro(){
-        let marca, modelo, ano, cor, km, valor_fipe;
-
-        this.setMarca = function(vMarca){
-            this.marca = vMarca;
-        }
-        this.getMarca = function(){
-            return this.marca;
-        }
-
-        this.setModelo = function(vModelo){
-            this.modelo = vModelo;
-        }
-        this.getModelo = function(){
-            return this.modelo;
-        }
-
-        this.setAno = function(vAno){
-            this.ano = vAno;
-        }
-        this.getAno= function(){
-            return this.ano;
-        }
-
-        this.setCor= function(vCor){
-            this.cor = vCor;
-        }
-        this.getCor= function(){
-            return this.cor;
-        }
-
-        this.setKm = function(vKm){
-            this.km = vKm;
-        }
-        this.getKm= function(){
-            return this.km;
-        }
-
-        this.setFipe = function(vFipe){
-            this.fipe = vFipe;
-        }
-        this.getFipe= function(){
-            return this.fipe;
-        }
-        function anosUtilizacao(){
-            var data = new Date();
-            var dataAtual = data.getFullYear();
-            var dataUsada = dataAtual - carro.ano;
-            return dataUsada;
-        }
-        function valorMercado(){
-                var valorMercado = 0;
-                var dataUssada = anosUtilizacao();
-                var pAno = carro.km / dataUssada ;
-                if (pAno<=30000){
-                    valorMercado = carro.valor_fipe * 1.10;
-                }
-                else if(30000 < pAno & pAno < 50000){
-                    valorMercado = carro.valor_fipe;
-                }
-                else if(pAno > 50000){
-                    valorMercado = carro.valor_fipe * 0.9;
-                    
-                }
-                return valorMercado;
-        }
-    };
-
         document.getElementById("add").addEventListener("click",function(){
-            
-            let carro = new Carro();
-                  
-            carro.valorMercado();
-            carro.anosUtilizacao();
+            //Referências
+            var marcaValue = document.getElementById('marca').value;
+            var modeloValue = document.getElementById('modelo').value;
+            var anoValue = document.getElementById('ano').value;
+            var corValue = document.getElementById('cor').value;
+            var kmValue = document.getElementById('km').value;
+            var valorValue = document.getElementById('fipe').value;
 
-            document.write("Valor do mercado: " + carro.valorMercado()); 
-            document.write("Anos de utilização do carro: " + carro.anosUtilizacao());
+            //Objeto
+            var carro = {
+                marca: marcaValue,
+                model: modeloValue,
+                ano: anoValue,
+                cor: corValue,
+                km: kmValue,
+                valor: valorValue,
+
+                //Função - tempo de utilização
+                anosUtilizacao: function(){
+                    var data = new Date();
+                    var tempoUti = data.getFullYear();
+                    tempoUti -= this.ano;
+                    //document.write("Data: " + anoUti);
+                    return tempoUti;
+                },
+
+                //Função - valor de mercado
+                valorMercado: function(){
+                    var tUti = this.anosUtilizacao();
+                    var kmAno = this.km/tUti;
+
+                    if(kmAno <= 30.000){
+                        this.valor = (this.valor*110)/100;
+                        return this.valor;
+                    }
+
+                    else if(kmAno > 30.000 && kmAno <= 50.000){
+                        return this.valor;
+                    }
+
+                    else{
+                        this.valor = (this.valor*90)/100;
+                        return this.valor;
+                    }
+                },
+            };      
+
+            var formatter = new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+            })
+            
+            alert("Tempo de Utilização: " + carro.anosUtilizacao() + " ano(s)" +
+                    "\nValor de Mercado: " + formatter.format(carro.valorMercado()));
         });
     </script>
     

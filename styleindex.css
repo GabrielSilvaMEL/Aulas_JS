@@ -53,7 +53,7 @@ header{
     justify-content: flex-end;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap:10px;
     width:30%;
     padding:10px;
     margin-left:10%;
@@ -86,7 +86,7 @@ a.button:hover{
 
 }
 .button:after,.botaovoltar:after{
-    border:1 px solid #FE8019;
+    border:1px solid #FE8019;
     content:"";
     position:absolute;
     background-color:#FE8019;
@@ -115,6 +115,11 @@ a.botaovoltar{
     bottom:3%;
     left:3%;
 }
+.retangulo{
+    fill:rgb(0,0,0,0);
+    stroke-width:3;
+    stroke:rgb(0,0,0);
+}
 
 .display{
     font-size: 50px;
@@ -138,23 +143,35 @@ a.botaovoltar{
 .btverificar{
     width:50%;
     font-size:25px;
-    background:#282828;
+    background-color:#282828;
     border:0;
     color:#66999D;
     border-radius:10px;
-    
+}
+.btverificar2{
+    position: fixed;
+    width:10%;
+    top:50%;
+    bottom:50%;
+    right:50%;
+    left:45%;
+    font-size:25px;
+    background-color:white;
+    border:0;
+    color:white;
+    border-radius:10px;
 }
 .btverificar:hover{
     border:1px solid white;
 }
-.teste{
+/* .teste{
     position: fixed;
     left:0;
     bottom:20%;
     height:15%;
     width:19%;
     background-color:#282828;
-}
+} */
 a.seta{
     color:white;
     position:fixed;
