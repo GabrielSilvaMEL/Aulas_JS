@@ -23,8 +23,8 @@ header{
     flex-direction: row;
     align-items: center;
     gap:20px;
-    top:3%;
-    left:3%;
+    top:15%;
+    left:5%;
 }
 .mainh1{
     font-size:80px;
@@ -90,18 +90,6 @@ a.button:hover{
     color: #66999D;
 
 }
-/* .button:after,.botaovoltar:after{
-    border:1px solid #FE8019;
-    content:"";
-    position:absolute;
-    background-color:#FE8019;
-    height:3px;
-    width:0;
-    left:0;
-    bottom:0;
-    transition:0.3s;
-} */
-
 
 a.botaovoltar{
     -webkit-appearance: button;
@@ -123,7 +111,6 @@ a.botaovoltar{
     position: fixed;
     bottom:15%;
     margin-left:49.3%;
-
 }
 .display{
     font-size: 50px;
@@ -155,27 +142,18 @@ a.botaovoltar{
 .btverificar2{
     position: fixed;
     width:10%;
-    top:50%;
-    bottom:50%;
-    right:50%;
-    left:45%;
+    bottom:10%;
+    right:20%;
     font-size:25px;
-    background-color:white;
+    background-color:#14161b;
     border:0;
-    color:white;
+    color:#FE8019;
     border-radius:10px;
 }
 .btverificar:hover{
     border:1px solid white;
 }
-/* .teste{
-    position: fixed;
-    left:0;
-    bottom:20%;
-    height:15%;
-    width:19%;
-    background-color:#282828;
-} */
+
 a.seta{
     color:white;
     position:fixed;
@@ -201,7 +179,7 @@ a.setavolta{
     text-decoration: none;
 }
 .fa-github{
-    font-size:30px;
+    font-size:40px;
     text-decoration: none;
     color:#66999D;
     
@@ -213,55 +191,5 @@ a.setavolta{
     position:fixed;
     text-decoration: none;
     color:#66999D;
-}  
-/* button{
-    color:#FE8019;
-    font-size:15px;
-    background:rgba(0, 0, 0, 0);
-    border:0;
-    width:100%;
-}
-button:hover{
-    border:1px solid #FE8019;
-    color:white;
-}
-a{
-    color:#FE8019;
-    text-decoration: none;
-    font-size: 20px;
-    
-}
-a:hover{
-    color: #66999D;
-} */
-
-
-/* #A89984 */
-/* .displaycentral{
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
-}
-.divcentral{
-    background-color: #282828;
-    width:250px;
-    height: 80px;
-    font-family:fantasy;
-    font-size:20px;
-    border: 1px solid #FE8019;
-    border-radius: 40px;
-    text-decoration:none;
-}
-.divcentral-clicavel{
-    background-color: #282828;
-    color: #66999D;
-    font-size: 30px;
-    font-family:fantasy; 
-    text-align: center;  
-}
-.divcentral-clicavel:hover{
-    color:#2B3C44;
-} */
+    font-size: 40px;
+} 
