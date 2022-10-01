@@ -29,6 +29,11 @@ header{
 .mainh1{
     font-size:80px;
     color:#66999D;
+     
+}
+.mainh1:hover{
+    text-shadow: 0 0 3px #66999D;
+    cursor:default;
 }
 
 .meio{
@@ -38,7 +43,7 @@ header{
     align-items: center;
     /* height:50%; */
     width:100%;
-    margin-top:13%; /* previamente era 10% */
+    margin-top:15%; /* previamente era 10% */
 }
 .coluna{
     width:100%;
@@ -85,7 +90,7 @@ a.button:hover{
     color: #66999D;
 
 }
-.button:after,.botaovoltar:after{
+/* .button:after,.botaovoltar:after{
     border:1px solid #FE8019;
     content:"";
     position:absolute;
@@ -95,11 +100,8 @@ a.button:hover{
     left:0;
     bottom:0;
     transition:0.3s;
-}
+} */
 
-.button:hover::after,.botaovoltar:hover::after{
-    width:100%;
-}
 
 a.botaovoltar{
     -webkit-appearance: button;
@@ -116,11 +118,13 @@ a.botaovoltar{
     left:3%;
 }
 .retangulo{
-    fill:rgb(0,0,0,0);
-    stroke-width:3;
-    stroke:rgb(0,0,0);
-}
+    height:70%;  
+    border:2px solid #FE8019;
+    position: fixed;
+    bottom:15%;
+    margin-left:49.3%;
 
+}
 .display{
     font-size: 50px;
     font-family:bebas neue;
@@ -196,7 +200,6 @@ a.setavolta{
     text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
     text-decoration: none;
 }
-
 .fa-github{
     font-size:30px;
     text-decoration: none;

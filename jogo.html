@@ -5,16 +5,7 @@
 
     <title>Jogo adivinhe o número</title>
     <link rel="stylesheet" href="styleindex.css">
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
+    <style> 
       .lastResult {
         color: white;
         padding: 3px;
@@ -49,21 +40,25 @@
   </head>
 
   <body>
-      <h1>Jogo adivinhe o número</h1>
+      <div class="meio">
+        <div class="coluna">
+            <div class="esquerda">
+                <h1 style="color:#528B8B">Jogo adivinhe o número</h1>
+                <p style="color:rgb(143, 142, 142);text-align:center;">Nós selecionamos um número aleatório entre 1 e 100. <br>Veja se consegue adivinhar em 10 chances ou menos. <br>Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
+            </div>
+            <div class="direita">
+              <label for="digitavel" class="display">Digite seu palpite: </label><input type="text" id="digitavel" class="digitavel">
+              <input type="submit" value="Enviar palpite" class="btverificar" style="background-color:#14161b;">
 
-      <p>Nós selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite foi muito alto ou muito baixo.</p>
-
-      <div class="form">
-        <label for="campoPalpite">Digite seu palpite: </label><input type="text" id="campoPalpite" class="campoPalpite">
-        <input type="submit" value="Enviar palpite" class="envioPalpite">
-      </div>
-
-      <div class="resultadoParas">
-        <p class="palpites"></p>
-        <p class="ultimoResultado"></p>
-        <p class="baixoOuAlto"></p>
-      </div>
-      <button class="botaovolta"><a class="botaovolta-clicavel" href="index.html">Voltar</a></button>
+              <div class="resultadoParas">
+                <p class="palpites"></p>
+                <p class="ultimoResultado"></p>
+                <p class="baixoOuAlto"></p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="retangulo"></div>
   </body>
 
 <a class="seta" href="data.html">ᐳ</a>
@@ -75,16 +70,16 @@
   var ultimoResultado = document.querySelector('.ultimoResultado');
   var baixoOuAlto = document.querySelector('.baixoOuAlto');
 
-  var envioPalpite = document.querySelector('.envioPalpite');
-  var campoPalpite = document.querySelector('.campoPalpite');
+  var btverificar = document.querySelector('.btverificar');
+  var digitavel = document.querySelector('.digitavel');
 
   var contagemPalpites = 1;
   var botaoReinicio;
-  campoPalpite.focus();
+  digitavel.focus();
 
 
   function conferirPalpite() {
-  var palpiteUsuario = Number(campoPalpite.value);
+  var palpiteUsuario = Number(digitavel.value);
   if (contagemPalpites === 1) {
     palpites.textContent = 'Palpites anteriores: ';
   }
@@ -112,10 +107,10 @@
   }
 
   contagemPalpites++;
-  campoPalpite.value = '';
-  campoPalpite.focus();
+  digitavel.value = '';
+  digitavel.focus();
 }
-envioPalpite.addEventListener('click', conferirPalpite);
+btverificar.addEventListener('click', conferirPalpite);
 
 
 var nome = 'Bingo';
@@ -129,8 +124,8 @@ cumprimento;
 
 
 function configFimDeJogo() {
-  campoPalpite.disabled = true;
-  envioPalpite.disabled = true;
+  digitavel.disabled = true;
+  btverificar.disabled = true;
   botaoReinicio = document.createElement('button');
   botaoReinicio.textContent = 'Iniciar novo jogo';
   document.body.appendChild(botaoReinicio);
@@ -147,10 +142,10 @@ function reiniciarJogo() {
 
   botaoReinicio.parentNode.removeChild(botaoReinicio);
 
-  campoPalpite.disabled = false;
-  envioPalpite.disabled = false;
-  campoPalpite.value = '';
-  campoPalpite.focus();
+  digitavel.disabled = false;
+  btverificar.disabled = false;
+  digitavel.value = '';
+  digitavel.focus();
 
   ultimoResultado.style.backgroundColor = 'white';
 
