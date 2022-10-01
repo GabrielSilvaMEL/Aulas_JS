@@ -209,6 +209,11 @@ a.setavolta{
 .fa-github:hover{
     color:white;
 }
+.fa-home{
+    position:fixed;
+    text-decoration: none;
+    color:#66999D;
+}  
 /* button{
     color:#FE8019;
     font-size:15px;
