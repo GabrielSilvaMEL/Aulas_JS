@@ -136,7 +136,7 @@ a.botaovoltar{
     font-size:25px;
     background-color:#282828;
     border:0;
-    color:#66999D;
+    color:rgb(143, 142, 142);
     border-radius:10px;
 }
 .btverificar2{
@@ -155,7 +155,7 @@ a.botaovoltar{
 }
 
 a.seta{
-    color:white;
+    color:#66999D;
     position:fixed;
     font-size: 40px;
     right:5%;
@@ -163,11 +163,14 @@ a.seta{
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
+    /* text-shadow: 0 0 3px #66999D; Sujeito a mudanças */
     text-decoration: none;
 }
+a.seta:hover{
+    text-shadow: 0 0 3px #66999D;
+}
 a.setavolta{
-    color:white;
+    color:#66999D;
     position:fixed;
     font-size: 40px;
     left:5%;
@@ -175,8 +178,11 @@ a.setavolta{
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
+    /*text-shadow: 0 0 3px #66999D;  Sujeito a mudanças */
     text-decoration: none;
+}
+a.setavolta:hover{
+    text-shadow: 0 0 3px #66999D;
 }
 .fa-github{
     font-size:40px;
@@ -193,3 +199,7 @@ a.setavolta{
     color:#66999D;
     font-size: 40px;
 } 
+.fa-home:hover{
+    color:white;
+    text-shadow: 0 0 3px #66999D;
+}

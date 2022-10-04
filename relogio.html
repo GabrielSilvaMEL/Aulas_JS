@@ -9,7 +9,7 @@
 
     
     <meta charset="utf-8">
-    <title>Relógio em JS</title>
+    <title>Relógio</title>
     <script type="text/javascript">
 
         function showTime() {
@@ -40,7 +40,7 @@
             data.textContent = dia;
             console.log(dia);
         }
-        function mainh1(){
+        function diasemana(){
                 const days = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", 
                 "Sexta-feira", "Sábado"];
 
@@ -48,9 +48,9 @@
                 // returns the current local time
                 let day= days[date.getDay()];
                 
-                var mainh1 = document.querySelector('.mainh1');               
+                var diasemana = document.querySelector('.diasemana');               
                 //set display the content from let time
-                mainh1.textContent = day;
+                diasemana.textContent = day;
                 //"print" on console
                 console.log(day);
         }
@@ -59,7 +59,7 @@
     </script>
 </head>
 
-<body onload="showTime(),showDay(),mainh1()">
+<body onload="showTime(),showDay(),diasemana()">
     <header>
         <a class="fa fa-home" style="font-size:34px" href="index.html"></a>
     </header>
@@ -67,7 +67,8 @@
     <div class="meio">
         <div class="coluna">
             <div class="esquerda">
-                <h1 class="mainh1">dia</h1>
+                <!-- <h1 class="diasemana">dia</h1> -->
+                <h1 class="mainh1">Relógio</h1>
             </div>
             <div class="direita">
                 <div class="display">00:00:00</div>
@@ -75,11 +76,10 @@
             </div>
         </div>
     </div>
-    <!-- <a href="index.html" class="botaovoltar">Voltar</a> -->
-    <a class="seta" href="palindromo.html">ᐳ</a>
-    <a class="setavolta" href="data.html">ᐸ</a>
+
+    <a class="seta" href="palindromo.html">▶</a>
+    <a class="setavolta" href="data.html">◀</a>
     <div class="retangulo"></div>
-    
     
 </body>
 </html>
