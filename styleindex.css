@@ -6,7 +6,6 @@ body{
         #282828 50%,
         #282828 100%
     );
-   
     color:white;
     font-size: 20px;
     font-family: bebas neue;
@@ -109,7 +108,8 @@ a.botaovoltar{
     border:2px solid #FE8019;
     position: fixed;
     bottom:15%;
-    margin-left:49.3%;
+    margin-left:49.5%; /*49.3 pra funcionar em alguns computadores*/
+    margin-right:49%;
 }
 .display{
     font-size: 50px;
