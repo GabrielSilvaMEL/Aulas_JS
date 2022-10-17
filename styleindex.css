@@ -1,3 +1,6 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
 body{
     background: linear-gradient(
         to right,
@@ -10,6 +13,7 @@ body{
     font-size: 20px;
     font-family: bebas neue;
 }
+
 li{
     color:#FE8019;
 }
