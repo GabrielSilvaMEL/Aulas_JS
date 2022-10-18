@@ -2,11 +2,16 @@ import React from 'react';
 
 let n = parseInt(prompt("Informe um número","5"));
 
+// Passando parâmetros para função
+// let n = parseInt(props.numero);
 
-function Titulo2(){
-  return <h2>Componente de Título com Função</h2>;
-}
 function Tabuada() {
+    // Passando parâmetros para função
+    // let n = parseInt(props.numero);
+
+    // props é adicionado como parâmetro na definição da função 
+    // function Tabuada(props) {}
+
   return (
     <div>
       <h1>Tabuada do {n}</h1>
