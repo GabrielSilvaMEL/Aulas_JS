@@ -2,6 +2,7 @@ import React from 'react';
 import Titulo from './Titulo';
 import Titulo2 from './Titulo2';
 import Tabuada from './Tabuada';
+import Cores from './Cores';
 
 
 //  Passando parâmetros para classe - > 

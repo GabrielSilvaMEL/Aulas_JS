@@ -15,7 +15,7 @@ class Cores extends React.Component {
             this.setState({valor_cor:"#005B8F"});
         }
         else{
-            this.setState({nome_cor:"Rosal"});
+            this.setState({nome_cor:"Rosa"});
             this.setState({valor_cor:"#FF0084"});
         }
     }
