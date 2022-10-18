@@ -16,6 +16,7 @@ function App() {
       <Tabuada /> */}
 
       {/* Passando parâmetros para função */}
+      <Cores />
       <Titulo titulo = "Fatec"
               texto= "Faculdade de Tecnologia de Presidente Prudente"
               link= "https://fatecpp.edu.br"
@@ -31,4 +32,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
