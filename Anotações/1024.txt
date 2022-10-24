@@ -15,3 +15,8 @@ This representa o objeto que chamou o metodo e nao a classe que representa o com
 //shot = (t) => {
     alert(t);
 }//
+
+Ciclo de vida > tres fases
+mounting >
+updating >
+unmounting >
