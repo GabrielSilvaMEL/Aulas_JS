@@ -17,6 +17,14 @@ This representa o objeto que chamou o metodo e nao a classe que representa o com
 }//
 
 Ciclo de vida > tres fases
-mounting >
+mounting > coloca elementos no dom
+    constructor() - inicia a classe
+    getDerivedStateFromProps()- Atualiza antes da renderização do componente
+    render() - Obrigatório - Gera o html pro dom
+    ComponentDidMount() - Atualiza após renderizar o componente
+
 updating >
 unmounting >
+
+component will unmount é chamado quando o componente esta prestes a ser removido do dom
+Atvdade 3 persquisa get snapshotbeforeupdate, shouldcomponentupdate
