@@ -1,4 +1,4 @@
-O REACT NÃO É UMA NOVA LINGUAGEM, é uma bilbioteca javascript.
+O REACT NÃO É UMA NOVA LINGUAGEM, é uma bilbioteca javascript   .
 "react native" é mobile
 "react" é web
 
