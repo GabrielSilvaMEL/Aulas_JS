@@ -1,0 +1,209 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    background: linear-gradient(
+        to right,
+        #14161b 0%,
+        #14161b 50%,
+        #282828 50%,
+        #282828 100%
+    );
+    color:white;
+    font-size: 20px;
+    font-family: bebas neue;
+}
+
+li{
+    color:#FE8019;
+}
+header{
+    /* posição fixa */
+    position:fixed;
+    /* Display flex */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    top:15%;
+    left:5%;
+}
+.mainh1{
+    font-size:80px;
+    color:#66999D;
+     
+}
+.mainh1:hover{
+    text-shadow: 0 0 3px #66999D;
+    cursor:default;
+}
+
+.meio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   height:100%;  /* pode ser excluído */
+    /* height:50%; */
+    width:100%;
+    margin-top:15%; /* previamente era 10% */
+}
+.coluna{
+    width:100%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.direita{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    width:30%;
+    padding:10px;
+    margin-left:10%;
+}
+.esquerda{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    margin-right: 10%;
+    width:30%;
+    padding:10px;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color:#FE8019;
+    font-size:20px;
+    background:rgba(0, 0, 0, 0);
+    border:0;
+    width:100%;
+    text-decoration: none;
+    text-align:center;
+    text-shadow: 0 0 3px #FE8019; /* Sujeito a mudanças */
+}
+a.button:hover{
+    color: #66999D;
+
+}
+a.botaovoltar{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    color:#FE8019;
+    font-size:25px;
+    background:rgba(0, 0, 0, 0);
+    border:0;
+    text-decoration: none;
+    text-align:center;
+    position:fixed;
+    bottom:3%;
+    left:3%;
+}
+.retangulo{
+    height:70%;  
+    border:2px solid #FE8019;
+    position: fixed;
+    bottom:15%;
+    margin-left:49.5%; /*49.3 pra funcionar em alguns computadores*/
+    margin-right:49%;
+}
+.display{
+    font-size: 50px;
+    font-family:bebas neue;
+    color:#FE8019
+}
+.digitavel{
+    width:100%;
+    font-size:25px;
+    background:#14161b;
+    border:1px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    color:white;
+    text-align:center;
+    text-shadow: 0 0 3px #FE8019;
+}
+.digitavel:hover{
+  border:1px solid white
+}
+/* Botão Verificar */
+.btverificar{
+    width:50%;
+    font-size:25px;
+    background-color:#282828;
+    border:0;
+    color:rgb(143, 142, 142);
+    border-radius:10px;
+}
+.btverificar2{
+    position: fixed;
+    width:10%;
+    bottom:10%;
+    right:20%;
+    font-size:25px;
+    background-color:#14161b;
+    border:0;
+    color:#FE8019;
+    border-radius:10px;
+}
+.btverificar:hover{
+    border:1px solid white;
+}
+
+a.seta{
+    color:#66999D;
+    position:fixed;
+    font-size: 40px;
+    right:5%;
+    top:50%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    /* text-shadow: 0 0 3px #66999D; Sujeito a mudanças */
+    text-decoration: none;
+}
+a.seta:hover{
+    text-shadow: 0 0 3px #66999D;
+}
+a.setavolta{
+    color:#66999D;
+    position:fixed;
+    font-size: 40px;
+    left:5%;
+    top:50%;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    /*text-shadow: 0 0 3px #66999D;  Sujeito a mudanças */
+    text-decoration: none;
+}
+a.setavolta:hover{
+    text-shadow: 0 0 3px #66999D;
+}
+.fa-github{
+    font-size:40px;
+    text-decoration: none;
+    color:#66999D;
+    
+}
+.fa-github:hover{
+    color:white;
+}
+.fa-home{
+    position:fixed;
+    text-decoration: none;
+    color:#66999D;
+    font-size: 40px;
+} 
+.fa-home:hover{
+    color:white;
+    text-shadow: 0 0 3px #66999D;
+}

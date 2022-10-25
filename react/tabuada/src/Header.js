@@ -1,18 +1,21 @@
 import React from 'react';
 
 class Header extends React.Component{
-
-    constructor(props){
+    
+    constructor(props){  
         super(props);
         this.state = {corfavorita: "Vermelho"};
     }
 
-    static getDerivedStateFromProps(props,state){
-        return {corfavorita: props.favcol};
+    static getDerivedStateFromProps(props, state){   
+       if (props.corfavorita == "Vermelho"){
+            return {corfavorita: props.favcol};    
+       }
     }
-    componentDidMount(){
+    componentDidMount(props){
         setTimeout(()=>{
-            this.setState({corfavorita:"verde"})
+            this.setState({corfavorita:"Verde"})
+            console.log(this.state.corfavorita);
         },1000);
     }
 
