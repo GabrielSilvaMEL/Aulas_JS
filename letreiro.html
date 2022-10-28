@@ -7,16 +7,23 @@
     estudar na Fatec". O texto deve aparecer letra a letra na
     página como se estivesse sendo digitado -->
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <link rel="stylesheet" href="/styleindex.css">
+    
+
+    <!-- Fonte Dark -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--Fim Da Fonte-->
 </head>
 <body>
     <header>
-        <a class="fa fa-home" style="font-size:34px" href="/index.html"></a>
+        <a class="fa fa-home" style="font-size:34px" href="index.html"></a>
     </header>
     <div class="meio">
         <div class="coluna">
@@ -24,11 +31,10 @@
                 <div class="mainh1">Letreiro</div>
             </div>
             <div class="direita">
-                <div id="root"></div>
+                <div id="root" class=""></div>
             </div>
         </div>
     </div>
-    <!-- <div id="voce" style="font-family: Arial;"></div> -->
     
     <script type="text/babel">
         let texto = 'Venha estudar na Fatec';
@@ -44,9 +50,8 @@
         setInterval(letreiro, 200);
     </script>
 
-
     <div class="retangulo"></div>
-    <a class="seta" href="/carro.html">▶</a>
-    <a class="setavolta" href="/carro.html">◀</a>
+    <a class="seta" href="carro.html">▶</a>
+    <a class="setavolta" href="carro.html">◀</a>
 </body>
 </html>

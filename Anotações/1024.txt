@@ -1,0 +1,30 @@
+eventos são ações do usuario dentro do app
+
+devem ser escritos em camel case
+no react os eventos sao definidos entre chaves. onClick={this.shoot}
+
+Event handler > uma boa pratica é colocar o event handler como um metodo na classe do componente como por exemplo a funcao shoot
+
+This representa o objeto que chamou o metodo e nao a classe que representa o componente
+
+//seta o this como objeto
+//this.shot = this.shot.bind(this)
+<button onClick={this.shoot.bind(this,"Voce clicou)}>
+
+//arrow function é uma alternativa possivelmente mais eficaz
+//shot = (t) => {
+    alert(t);
+}//
+
+Ciclo de vida > tres fases
+mounting > coloca elementos no dom
+    constructor() - inicia a classe
+    getDerivedStateFromProps()- Atualiza antes da renderização do componente
+    render() - Obrigatório - Gera o html pro dom
+    ComponentDidMount() - Atualiza após renderizar o componente
+
+updating >
+unmounting >
+
+component will unmount é chamado quando o componente esta prestes a ser removido do dom
+Atvdade 3 persquisa get snapshotbeforeupdate, shouldcomponentupdate
