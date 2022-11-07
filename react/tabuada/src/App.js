@@ -6,14 +6,16 @@ import Cores from './Cores';
 import Mensagem from './Mensagem';
 import Header from './Header';
 import TodoList from './TodoList';
-this.state={
-  itens:[],
-  text:''
-};
+import DidUpdate from './UpdFun';
+import ShouldUpdate from './UpdFun';
+import BeforeUpdate from './UpdFun';
 // import "./styleindex.css";
 //  Passando parâmetros para classe - > 
 
-
+// this.state={
+//   itens:[],
+//   text:''
+// };
 
 
 // let n = prompt("Informe um número", "5");
@@ -27,7 +29,9 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        
+          <ShouldUpdate></ShouldUpdate>
+          <BeforeUpdate></BeforeUpdate>
+          <DidUpdate></DidUpdate>
           <button id='8'>8</button>
           <button id='9'>9</button>
           <button id='4'>4</button>
