@@ -20,9 +20,9 @@ const Item2 = {
   text:"Item 2"
 }
 var itens = [Item1, Item2];
-const root = ReactDom.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ToDoList itens={itens}/>
+  <TodoList itens={itens}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
