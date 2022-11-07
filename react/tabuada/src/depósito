@@ -9,10 +9,10 @@ import TodoList from './TodoList';
 // import "./styleindex.css";
 //  Passando parâmetros para classe - > 
 
-// this.state={
-//   itens:[],
-//   text:''
-// };
+this.state={
+  itens:[],
+  text:''
+};
 
 
 // let n = prompt("Informe um número", "5");
@@ -73,9 +73,6 @@ import TodoList from './TodoList';
 //           />
 
 //           <Titulo2 />
-
-
-
 
 
 
