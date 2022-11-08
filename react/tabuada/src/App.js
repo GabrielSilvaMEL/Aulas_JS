@@ -1,6 +1,5 @@
 import React from 'react';
-import TodoList from './TodoList';
-
+import Calculadora from './Calculadora';
 
 
 
@@ -8,8 +7,8 @@ function App() {
   return (
     <div>
 
-    <Calculadora />
-
+    
+    <Calculadora n = "2+2"/>
 
 
     </div>
