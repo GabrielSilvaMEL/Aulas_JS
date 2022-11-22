@@ -102,5 +102,29 @@ function App() {
     getProducts(); // Busca os produtos ao carregar a pagina
   }, []);
   return;
+
+
+  const SMain = styled.main`
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows:1fr;
+  `;
+  return (
+    <SMain>
+      <Cart
+        products={cart}
+        onChange={setProduct}
+        onClick={submitCart}
+        isLoading={cartLoading}
+      />
+      <Products
+        products={products}
+        onClick={addPtoduct}
+        isLoading={productsLoading}
+      />
+    </SMain>
+  );
 }
 export default App;
