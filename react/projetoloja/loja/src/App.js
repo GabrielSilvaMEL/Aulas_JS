@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Cart from "./components/Cart";
 import Products from "./components/Products";
-/* Função para chamar API
-* @param {string} url caminho da função
-*@param {string} method m
-*@returns objeto de resposta
+
+/**  Função para chamar API
+*   @param {string} url caminho da função
+*   @param {string} method m
+*   @returns objeto de resposta
 */
 async function api(url, method, body = undefined) {
-  return await fetch(`http://localhost:4000$ {url}`, {
+  return await fetch(`http://localhost:4000${url}`, {
     body: body !== undefined ? JSON.stringify(body) : body,
     method: method,
     headers: {
@@ -34,9 +35,17 @@ async function apiGetProducts() {
  *  */
 
 async function apiSubmitCart(products) {
+  await api("/purchases", "POST", { products });
 }
-await api("/purchases", "POST", { products });
 
+
+const SMain = styled.main`
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows:1fr;
+`;
 
 
 
@@ -71,7 +80,7 @@ function App() {
   */
 
   function setProduct(product, change) {
-    const products = cart.filter(({ _id }) => {
+    const products = cart.filter(({ id }) => {
       return id !== product.id;
     });
 
@@ -87,7 +96,6 @@ function App() {
   /* 
   Adiciona produto no carrinho
   */
-
   function addProduct(product) {
     product.units = 1;
     setCart(() => [...cart, product]);
@@ -101,8 +109,6 @@ function App() {
   useEffect(() => {
     getProducts(); // Busca os produtos ao carregar a pagina
   }, []);
-  return;
-
 
   const SMain = styled.main`
   width: 100%;
@@ -113,18 +119,19 @@ function App() {
   `;
   return (
     <SMain>
-      <Cart
-        products={cart}
-        onChange={setProduct}
-        onClick={submitCart}
-        isLoading={cartLoading}
-      />
-      <Products
-        products={products}
-        onClick={addPtoduct}
-        isLoading={productsLoading}
-      />
+        <Cart
+          products={cart}
+          onChange={setProduct}
+          onClick={submitCart}
+          isLoading={cartLoading}
+        />
+        <Products
+          products={products}
+          onClick={addProduct}
+          isLoading={productsLoading}
+        />
     </SMain>
+
   );
 }
 export default App;
