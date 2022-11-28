@@ -1,52 +1,81 @@
 import React from 'react';
+import { useState } from 'react';
 
-const [input, setInput] = useState('');
+function Calculadora() {
+  const [calc, setCalc] = useState("");
+  const [result, setResult] = useState("");
 
-const agregarInput = val => {
-  setInput(input + val);
-};
+  const ops = ['/', '*', '+', '-', ','];
 
-const calcularResultado = () => {
-  if (input) {
-    setInput(evaluate(input));
-  } else {
-    alert("O valor não é válido.");
+  const updateCalc = value => {
+    if (
+      ops.includes(value) && calc === '' ||
+      ops.includes(value) && ops.includes(calc.slice(-1)
+      )
+    ) {
+      return;
+    }
+
+    setCalc(calc + value);
+
+    if (!ops.includes(value)) {
+      setResult(eval(calc + value).toString());
+
+    }
   }
-};
 
-return (
-  <div className='App'>
-    <div className='calculadora'>
-      <Pantalla input={input} />
-      <div className='fila'>
-        <button funcClic={agregarInput}>1</button>
-        <button funcClic={agregarInput}>2</button>
-        <button funcClic={agregarInput}>3</button>
-        <button funcClic={agregarInput}>+</button>
-      </div>
-      <div className='fila'>
-        <button funcClic={agregarInput}>4</button>
-        <button funcClic={agregarInput}>5</button>
-        <button funcClic={agregarInput}>6</button>
-        <button funcClic={agregarInput}>-</button>
-      </div>
-      <div className='fila'>
-        <button funcClic={agregarInput}>7</button>
-        <button funcClic={agregarInput}>8</button>
-        <button funcClic={agregarInput}>9</button>
-        <button funcClic={agregarInput}>*</button>
-      </div>
-      <div className='fila'>
-        <button funcClic={calcularResultado}>=</button>
-        <button funcClic={agregarInput}>0</button>
-        <button funcClic={agregarInput}>.</button>
-        <button funcClic={agregarInput}>/</button>
-      </div>
-      <div className='fila'>
-        <buttonClear funcClear={() => setInput('')}>
-          C
-        </buttonClear>
+  const createDigits = () => {
+    const digits = [];
+    for (let i = 1; i < 10; i++) {
+      digits.push(
+        <button onClick={() => updateCalc(i.toString())} key={i}>{i}</button>
+      )
+    }
+    return digits;
+  }
+
+
+  const calculate = () => {
+    setCalc(eval(calc).toString());
+  }
+
+  const deletea = () => {
+    if (calc == '') {
+      return;
+    }
+
+    const value = calc.slice(0, -1);
+
+    setCalc(value);
+  }
+
+  return (
+    <div className="App">
+      <div className="calculator">
+        <div className="display">
+          {result ? <span>({result})</span> : ''}
+          {calc || "0"}
+        </div>
+        <div className="operators">
+          <button onClick={() => updateCalc('/')}>/</button>
+          <button onClick={() => updateCalc('*')}>*</button>
+          <button onClick={() => updateCalc('+')}>+</button>
+          <button onClick={() => updateCalc('=')}>-</button>
+
+          <button onClick={deletea}>DELETAR</button>
+        </div>
+
+        <div className="digits">
+          {createDigits()}
+          <button onClick={() => updateCalc('0')}>0</button>
+          <button onClick={() => updateCalc('.')}>.</button>
+
+
+          <button onClick={calculate}>=</button>
+
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
+export default Calculadora;
