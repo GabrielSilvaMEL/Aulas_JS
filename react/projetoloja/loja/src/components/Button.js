@@ -8,7 +8,7 @@ const SButton = styled.button`
     background-color: #000000;
     font-size: 18px;
     border: 0;
-    border-radius: 8px;
+    border - radius: 8px;
 `;
 
 /**

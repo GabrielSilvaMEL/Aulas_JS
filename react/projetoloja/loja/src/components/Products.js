@@ -3,13 +3,12 @@ import styled from "styled-components";
 
 const SDiv =styled.div`
     height: 260px;
-    padding: 10px;
+
     border-radius: 10px; 
     background: #f2f2f2;
     cursor: pointer;
-
     img {
-    width: 100%;
+    width: 20%;
     height: 140px;
     border-radius: 5px; 
     }
@@ -21,7 +20,6 @@ const SDivInfo = styled.div`
     p{
     font-size: 15px;
     }
-
     span {
     font-size: 20px;
     font-weight: bold;
@@ -46,7 +44,7 @@ function Product({ product, onClick }) {
 /* Elemento de seção personalizado com CSS */
 const SSection = styled.section`
     overflow: auto; 
-    padding: 20px; 
+    padding: 10px; 
     display: grid;
     grid-template-columns: repeat(auto - fit, minmax(200px, 1fr));
     grid-auto-rows: 230px;

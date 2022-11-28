@@ -53,7 +53,7 @@ function Calculadora() {
     <div className="App">
       <div className="calculator">
         <div className="display">
-          {result ? <span>({result})</span> : ''}
+          
           {calc || "0"}
         </div>
         <div className="operators">
